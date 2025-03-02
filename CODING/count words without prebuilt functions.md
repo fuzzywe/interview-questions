@@ -1,5 +1,7 @@
 In C++, you can calculate the length of a string without using the length() or size() member functions by iterating through the string. Here are a few methods to achieve this:
 Method 1: Using a for loop
+
+```cpp
 #include <iostream>
 #include <string>
 int stringLength(const std::string& str) {
@@ -16,7 +18,11 @@ int main() {
     return 0;
 }
 
+```
 Method 2: Using a while loop
+
+---
+```cpp
 #include <iostream>
 #include <string>
 int stringLength(const std::string& str) {
@@ -34,8 +40,11 @@ int main() {
     std::cout << "Length: " << length << std::endl;  // Output: Length: 13
     return 0;
 }
+```
 
 Method 3: Using recursion
+
+```cpp
 #include <iostream>
 #include <string>
 int stringLength(const std::string& str, int index = 0) {
@@ -50,8 +59,12 @@ int main() {
     std::cout << "Length: " << length << std::endl;  // Output: Length: 13
     return 0;
 }
+```
 
 Method 4: Using pointer arithmetic
+---
+
+```cpp
 #include <iostream>
 #include <string>
 int stringLength(const std::string& str) {
@@ -70,4 +83,5 @@ int main() {
     return 0;
 }
 
+```
 These methods demonstrate how to calculate the length of a string in C++ without using the built-in length() or size() functions.
